@@ -39,7 +39,7 @@
             <section class="hero">
                 <div class="container hero-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero-button">Заказать услугу</button>
+                    <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 </div>
                
             </section>
@@ -98,12 +98,15 @@
             <ul class="list-foto">
                 <li class="img-list">
                     <img src="./images/img_computer.jpg" alt="розробка програм на компютері" width="370">
+                    <h3 class="section-img-subtitle">Десктопні додатки</h3>
                 </li>
                 <li class="img-list">
                     <img src="./images/img_telefon.jpg" alt="розробка дизайну сторінки на компютері" width="370">
+                    <h3 class="section-img-subtitle">Мобільні додатки</h3>
                 </li>
                 <li class="img-list">
                     <img src="./images/img_color.jpg" alt="вибір спектру кольлрів" width="370">
+                    <h3 class="section-img-subtitle">Дизайнерські рішення</h3>
                 </li>
             </ul>
             </div>
@@ -294,5 +297,15 @@
             </div>
         </div>
     </footer>
+    <div class="beckdrop is-hidden" data-modal>
+      <div class="modal">
+        <button tupe="button" class="modal-close-button" data-modal-close>
+            <svg class="icon-close" width="11px" height="11px">
+                <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+        </button>
+      </div>  
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
